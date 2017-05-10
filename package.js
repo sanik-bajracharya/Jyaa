@@ -1,6 +1,5 @@
 var copy = require('copy');
 
-console.log('Hello package js loaded...');
 (function() {
     var vendorJSFilesToCopy = [
             './node_modules/angular/angular.js',
@@ -11,14 +10,14 @@ console.log('Hello package js loaded...');
             './node_modules/html5-boilerplate/dist/css/normalize.css',
             './node_modules/html5-boilerplate/dist/css/main.css'
         ];
+    
+    var copyStaticResources = function(source, target, options) {
+        copy.each(source, target, options, function(err, files) {
+            if (err) throw err;
+        });
+    };
 
-    copy.each(vendorJSFilesToCopy, './app/vendor/js', {flatten: true}, function(err, files) {
-        if (err) throw err;
-        // `files` is an array of the files that were copied 
-    });
-    copy.each(vendorCSSFilesToCopy, './app/vendor/css', {flatten: true}, function(err, files) {
-        if (err) throw err;
-        // `files` is an array of the files that were copied 
-    });
+    copyStaticResources(vendorJSFilesToCopy, './app/vendor/js', {flatten: true});
+    copyStaticResources(vendorCSSFilesToCopy, './app/vendor/css', {flatten: true});    
 })();
 

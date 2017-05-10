@@ -22,19 +22,13 @@
     "buildify": "^0.4.0",
     "copy":"^0.3.0"
   },
-  "scripts": {
-    "mytest": "http-server -a localhost -p 8000 -c-1 ./app",
-    "premytest": "node test.js",
+  "scripts": {    
     "update-deps": "npm update",
-    "postupdate-deps": "bower update",
-
-    
+    "postupdate-deps": "bower update",    
     "start": "http-server -a localhost -p 8000 -c-1 ./app",
-
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
     "test-single-run": "karma start karma.conf.js --single-run",
-
     "preupdate-webdriver": "npm install",
     "update-webdriver": "webdriver-manager update",
 
