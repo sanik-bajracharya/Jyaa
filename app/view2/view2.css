@@ -1,0 +1,19 @@
+.logo-container {
+    box-sizing: border-box;
+    width: 100px;
+    height: 80px;
+    background-color: greenyellow;
+}
+
+.logo-container.active {
+    border-left: 5px solid blue;
+}
+
+.logo-container .channel-number {
+    padding: 9px;
+}
+
+.logo-container.active .channel-number {
+    padding: 4px;
+}
+

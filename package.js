@@ -2,8 +2,6 @@ var copy = require('copy');
 
 (function() {
     var vendorJSFilesToCopy = [
-            './node_modules/angular/angular.js',
-            './node_modules/angular-route/angular-route.js',
             './node_modules/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js',
         ],
         vendorCSSFilesToCopy = [

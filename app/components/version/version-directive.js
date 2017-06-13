@@ -1,5 +1,6 @@
 'use strict';
 
+/*
 angular.module('myApp.version.version-directive', [])
 
 .directive('appVersion', ['version', function(version) {
@@ -7,3 +8,4 @@ angular.module('myApp.version.version-directive', [])
     elm.text(version);
   };
 }]);
+*/
