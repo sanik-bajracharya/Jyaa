@@ -10,20 +10,5 @@ angular.module('myApp.view1', ['ngRoute'])
 }])
 
 .controller('View1Ctrl', [function() {
-    var controller = this;
-
-    controller.doSomething = function() {
-        console.log('doSomething...');
-    }
-
-    controller.clickIcon = function() {
-        console.log('clickedIcon...');
-    }
-
-
-}])
-
-.controller('View1Ctrl03', [function() {
-
+  
 }]);
-

@@ -1,5 +1,5 @@
-var HtmlWebpackPlugin = require("html-webpack-plugin");
-var webpack = require('webpack');
+var HtmlWebpackPlugin = require("html-webpack-plugin"),
+    webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
@@ -28,13 +28,7 @@ module.exports = {
         }),
         new webpack.optimize.CommonsChunkPlugin({
             name: "vendor",
-
-            // filename: "vendor.js"
-            // (Give the chunk a different name)
-
             minChunks: Infinity,
-            // (with more entries, this ensures that no other module
-            //  goes into the vendor chunk)
         })
 	]
 }
